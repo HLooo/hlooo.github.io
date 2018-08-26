@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="frame/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/fullpage.js/dist/jquery.fullpage.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel='stylesheet prefetch' href='http://www.jq22.com/jquery/font-awesome.4.6.0.css'>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+    <!--必要样式-->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="index.css">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+</head>
+<body >
+<!-------导航栏-------->
+
+
+<nav class="navbar navbar-fixed-top my-navbar" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#first">UI Resume</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+
+                <li><a href="#second">专业技能</a></li>
+                <li>
+                    <a href="#third">作品展示</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<div class="bg1"></div>-->
+<!--<br /><br /><br /><br /><br /><br /><br /><p><a href="www.xiandanke.com">闲蛋客</a></p>-->
+
+
+
+
+
+<!--<nav class="navbar  navbar-fixed-top   navbar-transparent">-->
+    <!--<div class="container-fluid">-->
+        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" href="#">RESUME</a>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="active"><a href="#first">自我介绍 <span class="sr-only">(current)</span></a></li>-->
+                <!--<li class="active"><a href="#second">专业技能 <span class="sr-only">(current)</span></a></li>-->
+                <!--&lt;!&ndash;<li><a href="#">作品展示</a></li>&ndash;&gt;-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#third" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">作品展示 </a>-->
+                    <!--&lt;!&ndash;<ul class="dropdown-menu">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#">C4D</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#">UI</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#">手绘</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li role="separator" class="divider"></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li><a href="#">AE/Principle</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;&lt;!&ndash;<li role="separator" class="divider"></li>&ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;&lt;!&ndash;<li><a href="#">One more separated link</a></li>&ndash;&gt;&ndash;&gt;-->
+                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+
+                <!--</li>-->
+                <!--<li class="active"><a href="#">联系方式 <span class="sr-only">(current)</span></a></li>-->
+            <!--</ul>-->
+            <!--&lt;!&ndash;<form class="navbar-form navbar-left">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="text" class="form-control" placeholder="Search">&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<button type="submit" class="btn btn-default">Submit</button>&ndash;&gt;-->
+            <!--&lt;!&ndash;</form>&ndash;&gt;-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="#">Link</a></li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+<!--</nav>-->
+
+
+<div id="fullpage">
+<!--------------------第一屏-------------------------->
+    <div class="section " id="first">
+
+        <div class="demo-1">
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title">UI <span class="thin">DESIGN</span></h1>
+                </div>
+
+            </div>
+        </div><!-- /container -->
+        <!--<div id="bodyBox">-->
+
+            <!--<div id="bodyPage">-->
+                <!--<img src="images/轮播1.jpg" class="bg">-->
+                <!--<img src="images/轮播2.jpg" class="bg">-->
+                <!--<img src="images/轮播3.jpg" class="bg">-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+
+<!--------轮播图--------->
+
+
+
+            <!--<div id="main_ad" class="carousel slide" data-ride="carousel">-->
+                <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+
+                <!--<ol class="carousel-indicators">-->
+                    <!--<li data-target="#main_ad" data-slide-to="0" class="active"></li>-->
+                    <!--<li data-target="#main_ad" data-slide-to="1"></li>-->
+                    <!--<li data-target="#main_ad" data-slide-to="2"></li>-->
+                <!--</ol>-->
+    <!--&lt;!&ndash;<div class="shade"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div class="carousel-inner " role="listbox">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="item active ">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img src="images/轮播1.jpg"   alt="...">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="carousel-caption">&ndash;&gt;-->
+                <!--&lt;!&ndash;...&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img src="images/轮播2.jpg"   alt="...">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="carousel-caption">&ndash;&gt;-->
+                <!--&lt;!&ndash;...&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="item">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img src="images/轮播3.jpg"  alt="...">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="carousel-caption">&ndash;&gt;-->
+                <!--&lt;!&ndash;...&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--<div class="carousel-inner" role="listbox">-->
+                <!--<div class="item active" data-image-lg="images/轮播1.jpg" data-image-xs="images/轮播11.jpg"></div>-->
+
+                <!--<div class="item" data-image-lg="images/轮播2.jpg" data-image-xs="images/轮播22.jpg"></div>-->
+                <!--<div class="item" data-image-lg="images/轮播3.jpg" data-image-xs="images/轮播33.jpg"></div>-->
+
+            <!--<div class="carousel-caption ">-->
+
+
+                <!--<p>不爱设计的程序员不是一个好厨子</p>-->
+                <!--<p>所以我懂代码爱设计喜做饭</p>-->
+                <!--<p>性格是时而沉稳时而幽默的双子男</p>-->
+
+
+
+            <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; Controls &ndash;&gt;-->
+    <!--<a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">-->
+        <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+        <!--<span class="sr-only">Previous</span>-->
+    <!--</a>-->
+    <!--<a class="right carousel-control" href="#main_ad" role="button" data-slide="next">-->
+        <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+        <!--<span class="sr-only">Next</span>-->
+    <!--</a>-->
+
+ <!--</div >-->
+
+
+</div>
+
+    <!--------------------第二屏-------------------------->
+
+
+ 
+
+
+
+
+    <div class="section two" id="second">
+        <div class="container">
+            <div class="row">
+                <div id="tmain" class="col-sm-6" ></div>
+                <div id="rmain" class="col-sm-6"></div>
+            </div>
+
+    </div>
+
+    </div>
+
+    <!--------------------第三屏-------------------------->
+    <div class="section" id="third">
+
+        <section class="strips">
+            <!--居里新房-->
+            <article class="strips__strip">
+                <div class="strip__content">
+                    <h1 class="strip__title" data-name="Lorem">居里新房</h1>
+                    <div class="strip__inner-text">
+                        <div class="jl jlxf"></div>
+
+                        <div class="xq row">
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img class="min" src="img/居里/1.png" alt=""></div>
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img src="img/居里/2.png" alt=""></div>
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img src="img/居里/3.png" alt=""></div>
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img src="img/居里/4.png" alt=""></div>
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img src="img/居里/5.png" alt=""></div>
+                        </div>
+
+
+
+                        <!--<p>hello! Welcome to jQ22!</p>-->
+                        <!--<p><a href="#" target="_blank"></a></p>-->
+                        <!--<p>-->
+                            <!--<a href="#" target="_blank"><i class="fa fa-qq"></i></a>-->
+                        <!--</p>-->
+                    </div>
+                </div>
+            </article>
+            <!--路客精品民宿-->
+            <article class="strips__strip">
+                <div class="strip__content">
+                    <h1 class="strip__title" data-name="Ipsum">路客民宿</h1>
+                    <div class="strip__inner-text">
+                        <div class="jl lkms">
+
+                        </div>
+
+                        <div class="xq row">
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img src="img/路客精品民宿/1.png" alt=""></div>
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img src="img/路客精品民宿/2.png" alt=""></div>
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img src="img/路客精品民宿/3.png" alt=""></div>
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img src="img/路客精品民宿/4.png" alt=""></div>
+                            <div class="aa col-xs-12 col-sm-12 col-md-4 col-zdlg-2-5 col-red-border"><img src="img/路客精品民宿/5.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!--C4D-->
+            <article class="strips__strip">
+                <div class="strip__content">
+                    <h1 class="strip__title" data-name="Dolor">C4D</h1>
+                    <div class="strip__inner-text">
+                        <div class="jl C4D"></div>
+                        <div class="xq row">
+                            <div class="aa col-sm-12">
+                                <img src="img/c4d/C4D.png" alt="">
+                                
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </article>
+            <!--手绘-->
+            <article class="strips__strip">
+                <div class="strip__content">
+                    <h1 class="strip__title" data-name="Sit">手绘</h1>
+                    <div class="strip__inner-text">
+                        <div class="jl sh"></div>
+                        <div class="xq row">
+                            <div class="aa col-sm-12">
+                                <img src="img/9.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!--本站-->
+            <article class="strips__strip">
+                <div class="strip__content">
+                    <h1 class="strip__title" data-name="Amet">本网站</h1>
+                    <div class="strip__inner-text">
+                        <div class="jl dm"></div>
+                        <div class="xq row">
+                            <div class="aa col-sm-12">
+                                <img src="img/8.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <i class="fa fa-close strip__close"></i>
+        </section>
+    </div>
+
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="js/jquery/dist/jquery.min.js"></script>
+
+
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="frame/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script src="js/fullpage.js/dist/jquery.fullpage.js"></script>
+<script src="frame/echarts.common.min.js"></script>
+<script type="text/javascript" src="js/fullplay.js"></script>
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/rAF.js"></script>
+<script src="js/demo-1.js"></script>
+<script src="js/photoswipe.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
