@@ -3,35 +3,51 @@
  */
 
 
-var text = document.getElementById('text'),
-    body = document.body,
-    steps = 7;
-function threedee (e) {
-    var x = Math.round(steps / (window.innerWidth / 2) * (window.innerWidth / 2 - e.clientX)),
-        y = Math.round(steps / (window.innerHeight / 2) * (window.innerHeight / 2 - e.clientY)),
-        shadow = '',
-        color = 190,
-        radius = 3,
-        i;
-
-    for (i=0; i<steps; i++) {
-        tx = Math.round(x / steps * i);
-        ty = Math.round(y / steps * i);
-        if (tx || ty) {
-            color -= 3 * i;
-            shadow += tx + 'px ' + ty + 'px 0 rgb(' + color + ', ' + color + ', ' + color + '), ';
+$(function(){
+    $('#fullpage').fullpage({
+            // 'verticalCentered': false
+            //     paddingBottom:200
+            'verticalCentered': false,
+            'css3': true,
+            // 'sectionsColor': ['#254875', '#00FF00', '#254587', '#695684'],
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            'navigation': true,
+            'navigationPosition': 'right',
+            'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple']
         }
-    }
+    );
+});
 
-    shadow += x + 'px ' + y + 'px 1px rgba(0,0,0,.2), ' + x*2 + 'px ' + y*2 + 'px 6px rgba(0,0,0,.3)';
 
-    text.style.textShadow = shadow;
-    text.style.webkitTransform = 'translateZ(0) rotateX(' + y*1.5 + 'deg) rotateY(' + -x*1.5 + 'deg)';
-    text.style.MozTransform = 'translateZ(0) rotateX(' + y*1.5 + 'deg) rotateY(' + -x*1.5 + 'deg)';
-}
-
-document.addEventListener('mousemove', threedee, false);
-
+// var text = document.getElementById('text'),
+//     body = document.body,
+//     steps = 7;
+// function threedee (e) {
+//     var x = Math.round(steps / (window.innerWidth / 2) * (window.innerWidth / 2 - e.clientX)),
+//         y = Math.round(steps / (window.innerHeight / 2) * (window.innerHeight / 2 - e.clientY)),
+//         shadow = '',
+//         color = 190,
+//         radius = 3,
+//         i;
+//
+//     for (i=0; i<steps; i++) {
+//         tx = Math.round(x / steps * i);
+//         ty = Math.round(y / steps * i);
+//         if (tx || ty) {
+//             color -= 3 * i;
+//             shadow += tx + 'px ' + ty + 'px 0 rgb(' + color + ', ' + color + ', ' + color + '), ';
+//         }
+//     }
+//
+//     shadow += x + 'px ' + y + 'px 1px rgba(0,0,0,.2), ' + x*2 + 'px ' + y*2 + 'px 6px rgba(0,0,0,.3)';
+//
+//     text.style.textShadow = shadow;
+//     text.style.webkitTransform = 'translateZ(0) rotateX(' + y*1.5 + 'deg) rotateY(' + -x*1.5 + 'deg)';
+//     text.style.MozTransform = 'translateZ(0) rotateX(' + y*1.5 + 'deg) rotateY(' + -x*1.5 + 'deg)';
+// }
+//
+// document.addEventListener('mousemove', threedee, false);
+//
 
 
 $(window).scroll(function () {
@@ -65,20 +81,7 @@ $('#myTabs a[href="#profile"]').tab('show') // Select tab by name
 $('#myTabs a:first').tab('show') // Select first tab
 $('#myTabs a:last').tab('show') // Select last tab
 $('#myTabs li:eq(2) a').tab('show') // Select third tab (0-indexed)
-$(function(){
-    $('#fullpage').fullpage({
-        // 'verticalCentered': false
-        //     paddingBottom:200
-            'verticalCentered': false,
-            'css3': true,
-            // 'sectionsColor': ['#254875', '#00FF00', '#254587', '#695684'],
-            anchors: ['page1', 'page2', 'page3', 'page4'],
-            'navigation': true,
-            'navigationPosition': 'right',
-            'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple']
-    }
-    );
-});
+
 // $(function () {
 //     function resize() {
 //         //获取屏幕宽度

@@ -256,7 +256,7 @@ img.bg {
     background: url(img/组1.png)no-repeat center;
 }
 .C4D{
-    background: url(img/c4d.png)no-repeat center;
+    background: url(img/分组11.png)no-repeat center;
 }
 .sh{
     background: url(img/hh.png)no-repeat center;
@@ -307,6 +307,8 @@ img.bg {
 
 
 .strip__close {
+    width: 50px;
+    height: 50px;
     position: absolute;
     right: 4vw;
     top: 20vw;
@@ -340,6 +342,8 @@ img.bg {
 
 
     .strip__close {
+        width: 50px;
+        height: 50px;
         position: absolute;
         right: 4vw;
         top: 10vw;
@@ -432,7 +436,7 @@ img.bg {
         background: url(img/组1.png)no-repeat center;
     }
     .C4D{
-        background: url(img/c4d.png)no-repeat center;
+        background: url(img/分组11.png)no-repeat center;
     }
     .sh{
         background: url(img/hh.png)no-repeat center;
