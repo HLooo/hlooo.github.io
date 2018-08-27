@@ -4,6 +4,17 @@
 
 
 $(function(){
+    $(".fakeloader").fakeLoader({
+        timeToHide:8200,
+        bgColor:"#34495e",
+        spinner:"spinner3"
+    });
+});
+
+
+
+
+$(function(){
     $('#fullpage').fullpage({
             // 'verticalCentered': false
             //     paddingBottom:200
